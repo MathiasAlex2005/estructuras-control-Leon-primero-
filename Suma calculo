@@ -1,0 +1,17 @@
+#include <iostream>
+using namespcae std;
+int main() {
+  int numero, suma = 0, i = 1;
+
+  cout << "Ingrese un número: ";
+  cin >> numero;
+
+  do {
+    suma += i;
+    i++;
+  } while (i <= numero);
+
+  cout << "La suma de los números hasta " << numero << " es: " << suma << endl;
+
+  return 0;
+} 

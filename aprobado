@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+    double calificacion;// la variante
+
+    cout << "Ingrese la calificacion del estudiante: ";
+    cin >> calificacion;
+    if(calificacion >= 60){// se indica que si es menos de 60 reprueba 
+        cout << "La nota del estudiante es aproabada. ";
+    }else{
+        cout << "La nota del estudiante es reprobada. ";
+    }
+
+    return 0; 
+
+}

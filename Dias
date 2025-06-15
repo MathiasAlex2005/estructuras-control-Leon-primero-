@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+  int numeroDia;
+
+  cout << "Ingrese un número entre 1 y 3: ";
+  cin >> numeroDia;
+
+  switch (numeroDia) {
+    case 1:
+      cout << "Lunes" << endl;
+      break;
+    case 2:
+      cout << "Martes" << endl;
+      break;
+    case 3:
+      cout << "Miércoles" << endl;
+      break;
+    default:
+      cout << "Número inválido. Por favor, ingrese un número entre 1 y 3." << endl;
+  }
+
+  return 0;
+}

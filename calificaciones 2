@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std; 
+int main() {
+    int calificacion;
+
+    cout << "Ingrese la calificación: ";
+    cin >> calificacion;
+
+    if (calificacion >= 90) {
+        cout << "Excelente" << endl;
+    } else if (calificacion >= 70) {
+        cout << "Buena" << endl;
+    } else if (calificacion >= 50) {
+        cout << "Regular" << endl;
+    } else {
+        cout << "Mala" << endl;
+    }
+
+    return 0;
+}

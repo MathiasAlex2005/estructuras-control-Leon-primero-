@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int numero;
+
+  do {
+    cout << "Ingrese un número: ";
+    cin >> numero;
+  } while (numero <= 100);
+
+  cout << "¡Ha ingresado un número mayor a 100! El número ingresado fue: " << numero << endl;
+
+  return 0;
+}

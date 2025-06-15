@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int numero;
+
+  cout << "Ingrese un número entre 1 y 3: ";
+  cin >> numero;
+
+  switch (numero) {
+    case 1:
+      cout << "Sí" << endl;
+      break;
+    case 2:
+      cout << "No" << endl;
+      break;
+    case 3:
+      cout << "Tal vez" << endl;
+      break;
+    default:
+      cout << "Número inválido. Por favor, ingrese un número entre 1 y 3." << endl;
+  }
+
+  return 0;
+}

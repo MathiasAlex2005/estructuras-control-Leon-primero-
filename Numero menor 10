@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int intentos = 0;
+  int numero;
+
+  do {
+    cout << "Ingrese un número menor que 10 para terminar: ";
+    cin >> numero;
+    intentos++;
+  } while (numero >= 10);
+
+  cout << "Programa terminado. Número de intentos: " << intentos << endl;
+
+  return 0;
+} 

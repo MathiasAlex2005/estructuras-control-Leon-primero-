@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+using namespace std; 
+
+int main() {
+    int numeroMes;
+
+    cout << "Ingrese un número entre 1 y 5: ";
+    cin >> numeroMes;
+
+    string nombreMes;
+
+    switch (numeroMes) {
+        case 1:
+            nombreMes = "Enero";
+            break;
+        case 2:
+            nombreMes = "Febrero";
+            break;
+        case 3:
+            nombreMes = "Marzo";
+            break;
+        case 4:
+            nombreMes = "Abril";
+            break;
+        case 5:
+            nombreMes = "Mayo";
+            break;
+        default:
+            nombreMes = "Número inválido. Debe estar entre 1 y 5.";
+    }
+
+   cout << "El mes correspondiente es: " << nombreMes;
+
+    return 0;
+}

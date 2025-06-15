@@ -1,0 +1,32 @@
+#include <iostream>
+#include <iomanip> // para usar fixed y setprecision
+using namespace std; 
+
+int main() {
+  // Define el salario mínimo (ajusta este valor según tu región)
+  double salarioMinimo = 1.95; //  Ejemplo: 1.95 unidades monetarias por hora
+
+  // Solicita al usuario que ingrese su salario
+  double salarioUsuario;
+  std::cout << "Ingrese su salario por hora: ";
+  std::cin >> salarioUsuario;
+
+  // Verifica si el salario es válido (no negativo)
+  if (salarioUsuario < 0) {
+    std::cout << "Error: El salario no puede ser negativo." << std::endl;
+    return 1; // Indica un error
+  }
+
+  // Compara el salario del usuario con el salario mínimo
+  if (salarioUsuario >= salarioMinimo) {
+    std::cout << "Su salario está por encima o igual al salario mínimo." << std::endl;
+  } else {
+    std::cout << "Su salario está por debajo del salario mínimo." << std::endl;
+  }
+
+  // Muestra la diferencia entre el salario y el salario mínimo (opcional)
+  double diferencia = salarioUsuario - salarioMinimo;
+  std::cout << "Diferencia: " << std::fixed << std::setprecision(2) << diferencia << std::endl;
+
+  return 0;
+}

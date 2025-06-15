@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std; 
+
+int main() {
+    int numero;
+
+    do {
+        cout << "Ingrese un numero entre 1 y 5: ";
+        cin >> numero;
+
+        if (numero < 1 || numero > 5) {
+            cout << "Numero invalido. Intente de nuevo." << endl;
+        }
+    } while (numero < 1 || numero > 5);
+
+    cout << "Numero correcto: " << numero << endl;
+
+    return 0;
+}

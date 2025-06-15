@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int num, primero = 0, segundo = 1, siguiente;
+
+  cout << "Ingrese un número: ";
+  cin >> num;
+
+  cout << "Serie de Fibonacci: ";
+
+  if (num >= 1) {
+    cout << primero << " ";
+  }
+  if (num >= 2) {
+    cout << segundo << " ";
+  }
+
+  while (segundo < num) {
+    siguiente = primero + segundo;
+    if (siguiente <= num) {
+        cout << siguiente << " ";
+    }
+    primero = segundo;
+    segundo = siguiente;
+  }
+
+  cout << endl;
+
+  return 0;
+}

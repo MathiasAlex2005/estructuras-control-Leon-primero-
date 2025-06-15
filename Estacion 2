@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int estacion;
+
+  // Solicitar número de estación
+  cout << "Ingrese un número de estación (1-4): ";
+  cin >> estacion;
+
+  // Determinar la estación del año
+  switch (estacion) {
+    case 1:
+      cout << "Primavera" << endl;
+      break;
+    case 2:
+      cout << "Verano" << endl;
+      break;
+    case 3:
+      cout << "Otoño" << endl;
+      break;
+    case 4:
+      cout << "Invierno" << endl;
+      break;
+    default:
+      cout << "Número inválido. Debe ser entre 1 y 4." << endl;
+      break;
+  }
+
+  return 0;
+}

@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  float temperatura;
+
+  cout << "Ingrese la temperatura en grados Celsius: ";
+  cin >> temperatura;
+
+  if (temperatura < 10) {
+    cout << "Clima frío" << endl;
+  } else if (temperatura <= 20) {
+    cout << "Clima templado" << endl;
+  } else {
+    cout << "Clima cálido" << endl;
+  }
+
+  return 0;
+}

@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int numero;
+  int suma = 0;
+
+  // Solicitamos número positivo
+  cout << "Ingrese un número positivo: ";
+  cin >> numero;
+
+  // Se verifica si el número es positivo
+  while (numero < 0) {
+    cout << "Error: El número debe ser positivo. Ingrese nuevamente: ";
+    cin >> numero;
+  }
+
+  // Calculamos la suma de dígitos
+  while (numero > 0) {
+    suma += numero % 10;
+    numero /= 10;
+  }
+
+  cout << "La suma de los dígitos es: " << suma << endl;
+
+  return 0;
+} 

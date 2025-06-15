@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int n;
+
+  cout << "Ingrese un número entero: ";
+  cin >> n;
+
+  cout << "Los primeros " << n << " números pares son:" << endl;
+  for (int i = 2; i <= 2 * n; i += 2) {
+    cout << i << " ";
+  }
+  cout << endl;
+
+  return 0;
+}

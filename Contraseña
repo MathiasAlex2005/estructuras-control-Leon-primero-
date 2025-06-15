@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  string contrasena = "miContrasena"; // Contraseña correcta
+  string intento;
+
+  do {
+    cout << "Ingrese la contraseña: ";
+    cin >> intento;
+
+    if (intento != contrasena) {
+      cout << "Contraseña incorrecta. Intente nuevamente." << endl;
+    }
+  } while (intento != contrasena);
+
+  cout << "Contraseña correcta. Acceso concedido." << endl;
+
+  return 0;
+} 
